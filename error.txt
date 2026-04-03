@@ -1,0 +1,5 @@
+Error: Unsupported protocol: c:
+    at loadFromURI (file:///C:/Users/ronal/.gemini/antigravity/scratch/ronald-ferraz-portfolio/node_modules/@imgly/background-removal-node/dist/index.mjs:137:13)
+    at imageSourceToImageData (file:///C:/Users/ronal/.gemini/antigravity/scratch/ronald-ferraz-portfolio/node_modules/@imgly/background-removal-node/dist/index.mjs:234:26)
+    at removeBackground (file:///C:/Users/ronal/.gemini/antigravity/scratch/ronald-ferraz-portfolio/node_modules/@imgly/background-removal-node/dist/index.mjs:468:29)
+    at async main (file:///C:/Users/ronal/.gemini/antigravity/scratch/ronald-ferraz-portfolio/remove_bg.js:11:22)
