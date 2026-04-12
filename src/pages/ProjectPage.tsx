@@ -14,7 +14,7 @@ const PROJECT_DATA: Record<string, any> = {
     client: 'AD.E.C.A',
     description: 'Identidade visual agressiva e poderosa para o evento principal de batalha espiritual. O projeto exigiu uma estética focada em impacto, autoridade e engajamento visual nas redes da igreja.',
     images: [
-      { id: 1, url: 'COLE_A_URL_DA_IMAGEM_AQUI_1', aspect: 'aspect-square' },
+      { id: 1, url: '/img/pr felipe 2.png', aspect: 'aspect-square' },
       { id: 2, url: 'COLE_A_URL_DA_IMAGEM_AQUI_2', aspect: 'aspect-[4/5]' },
       { id: 3, url: 'COLE_A_URL_DA_IMAGEM_AQUI_3', aspect: 'aspect-video' }
     ]

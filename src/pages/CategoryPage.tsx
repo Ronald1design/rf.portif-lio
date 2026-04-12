@@ -18,6 +18,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         id: 'project/batalha-espiritual',
         title: 'Culto de Batalha Espiritual',
         client: 'AD.E.C.A',
+        coverImg: 'img/pr felipe 2.png',
         desc: 'Identidade visual agressiva e poderosa para o evento principal de batalha espiritual. O projeto exigiu uma estética focada em impacto e autoridade.',
       },
       {
@@ -189,12 +190,18 @@ export default function CategoryPage({ category, onBack, onSelectCategory }: Cat
                 className="project-img-placeholder w-full aspect-4/3 bg-elevated-bg flex flex-col items-center justify-center gap-3 border-b border-border-color relative overflow-hidden cursor-none"
                 onClick={() => !project.isPlaceholder && onSelectCategory(project.id)}
               >
-                <div className="w-10 h-10 border-[1.5px] border-text-muted rounded-full flex items-center justify-center relative z-1">
-                  <ImageIcon className="w-[18px] h-[18px] text-text-muted" />
-                </div>
-                <span className="font-mono text-[10px] tracking-[2px] uppercase text-text-muted relative z-1">
-                  Cole a URL da imagem
-                </span>
+                {project.coverImg ? (
+                  <img src={`/${project.coverImg}`} alt={project.title} className="w-full h-full object-cover relative z-1" />
+                ) : (
+                  <>
+                    <div className="w-10 h-10 border-[1.5px] border-text-muted rounded-full flex items-center justify-center relative z-1">
+                      <ImageIcon className="w-[18px] h-[18px] text-text-muted" />
+                    </div>
+                    <span className="font-mono text-[10px] tracking-[2px] uppercase text-text-muted relative z-1">
+                      Cole a URL da imagem
+                    </span>
+                  </>
+                )}
                 
                 {/* Visual affordance for clicking if it's a real project */}
                 {!project.isPlaceholder && (
