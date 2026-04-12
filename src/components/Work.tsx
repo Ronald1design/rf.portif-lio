@@ -111,9 +111,9 @@ export default function Work({ onSelectCategory }: WorkProps) {
           
           <div className="print-viz">
             <div className="print-stack">
-              <div className="print-sheet" style={{ width: 60, height: 100, top: 30, left: 70, transform: 'rotate(8deg)', background: 'rgba(255,255,255,0.04)' }}></div>
-              <div className="print-sheet" style={{ width: 70, height: 110, top: 20, left: 50, transform: 'rotate(3deg)', background: 'rgba(255,255,255,0.05)' }}></div>
-              <div className="print-sheet" style={{ width: 75, height: 120, top: 10, left: 30, background: 'rgba(255,255,255,0.06)', borderColor: 'rgba(163,230,53,0.3)' }}></div>
+              <div className="print-sheet w-[60px] h-[100px] top-[30px] left-[70px] rotate-[8deg] bg-[rgba(255,255,255,0.04)]"></div>
+              <div className="print-sheet w-[70px] h-[110px] top-[20px] left-[50px] rotate-[3deg] bg-[rgba(255,255,255,0.05)]"></div>
+              <div className="print-sheet w-[75px] h-[120px] top-[10px] left-[30px] bg-[rgba(255,255,255,0.06)] border-[rgba(163,230,53,0.3)]"></div>
               <div className="absolute -bottom-[30px] left-[62px] w-0.5 h-10 bg-[#444]"></div>
               <div className="absolute -bottom-[30px] left-[48px] w-7 h-[3px] bg-[#444] rounded-[2px]"></div>
             </div>

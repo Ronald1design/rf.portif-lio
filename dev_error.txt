@@ -1,0 +1,13 @@
+
+> react-example@0.0.0 dev
+> vite --port=3000 --host=0.0.0.0
+
+[31mfailed to load config from C:\Users\ronal\.gemini\antigravity\scratch\ronald-ferraz-portfolio\rf.portif-lio\vite.config.ts[39m
+[31merror when starting dev server:
+Error: The service was stopped
+    at C:\Users\ronal\.gemini\antigravity\scratch\ronald-ferraz-portfolio\rf.portif-lio\node_modules\vite\node_modules\esbuild\lib\main.js:949:34
+    at responseCallbacks.<computed> (C:\Users\ronal\.gemini\antigravity\scratch\ronald-ferraz-portfolio\rf.portif-lio\node_modules\vite\node_modules\esbuild\lib\main.js:603:9)
+    at Socket.afterClose (C:\Users\ronal\.gemini\antigravity\scratch\ronald-ferraz-portfolio\rf.portif-lio\node_modules\vite\node_modules\esbuild\lib\main.js:594:28)
+    at Socket.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)[39m

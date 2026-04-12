@@ -20,12 +20,14 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         client: 'AD.E.C.A',
         coverImg: 'img/pr felipe 2.png',
         desc: 'Identidade visual agressiva e poderosa para o evento principal de batalha espiritual. O projeto exigiu uma estética focada em impacto e autoridade.',
+        behanceUrl: 'https://www.behance.net/'
       },
       {
         id: 'project/conferencia-jovens',
         title: 'Conferência de Jovens 2025',
         client: 'Igreja Local',
         desc: 'Identidade visual vibrante e enérgica para o congresso anual de jovens, focada em conexão com a Geração Z.',
+        behanceUrl: 'https://www.behance.net/'
       }
     ]
   },
@@ -41,12 +43,14 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         title: 'Lançamento Promocional',
         client: 'KR Brindes',
         desc: 'Campanha de redes sociais focada em conversão para novos produtos promocionais corporativos.',
+        behanceUrl: 'https://www.behance.net/'
       },
       {
         id: 'project/social-hamburgueria',
         title: 'Rebranding Digital',
         client: 'Hamburgueria Artesanal',
         desc: 'Estratégia de feed magnético. Foco em imagens apetitosas e design escuro para aumentar vendas no IFood.',
+        behanceUrl: 'https://www.behance.net/'
       }
     ]
   },
@@ -62,12 +66,14 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         title: 'Camisa Grupo de Percussão',
         client: 'Ministério de Louvor',
         desc: 'Design e mockup realista para a nova camisa do ministério, focada em conforto e elegância minimalista.',
+        behanceUrl: 'https://www.behance.net/'
       },
       {
         id: 'project/brindes-copa',
         title: 'Kit Copa do Mundo',
         client: 'KR Brindes',
         desc: 'Personalização e simulação visual de kits corporativos entregues em massa para a temporada de copa.',
+        behanceUrl: 'https://www.behance.net/'
       }
     ]
   },
@@ -83,6 +89,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         title: 'Linha de Suplementos',
         client: 'Nutrition Pro',
         desc: 'Design premium para potes e sachês de suplementos, transmitindo alta performance e credibilidade.',
+        behanceUrl: 'https://www.behance.net/'
       }
     ]
   },
@@ -98,6 +105,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         title: 'Standee Evento Corporativo',
         client: 'Summit 2025',
         desc: 'Comunicação local e sinalização para o hall do evento de negócios. Leitura rápida e alto contraste.',
+        behanceUrl: 'https://www.behance.net/'
       }
     ]
   },
@@ -113,6 +121,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         title: 'App de Delivery',
         client: 'FoodExpress',
         desc: 'Estudo de caso focado em redução de atrito no carrinho e design moderno para o usuário final.',
+        behanceUrl: 'https://www.behance.net/'
       }
     ]
   }
@@ -160,17 +169,17 @@ export default function CategoryPage({ category, onBack, onSelectCategory }: Cat
       </nav>
 
       <div className="pt-[120px] md:pt-[140px] px-5 md:px-10 pb-[40px] md:pb-[60px] border-b border-border-color relative overflow-hidden">
-        <div className="font-mono text-[11px] tracking-[3px] uppercase text-accent mb-4 flex items-center gap-3 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        <div className="font-mono text-[11px] tracking-[3px] uppercase text-accent mb-4 flex items-center gap-3 animate-fade-up [animation-delay:100ms]">
           <div className="w-8 h-px bg-accent"></div>
           {data.eyebrow}
         </div>
-        <h1 className="font-display text-[clamp(60px,9vw,120px)] leading-[0.9] tracking-[3px] animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <h1 className="font-display text-[clamp(60px,9vw,120px)] leading-[0.9] tracking-[3px] animate-fade-up [animation-delay:200ms]">
           {data.title}
         </h1>
-        <span className="font-script text-[clamp(28px,4vw,52px)] text-accent block mt-1 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+        <span className="font-script text-[clamp(28px,4vw,52px)] text-accent block mt-1 animate-fade-up [animation-delay:300ms]">
           {data.script}
         </span>
-        <p className="mt-5 text-[15px] text-text-secondary max-w-[500px] leading-[1.7] animate-fade-up" style={{ animationDelay: '0.4s' }}>
+        <p className="mt-5 text-[15px] text-text-secondary max-w-[500px] leading-[1.7] animate-fade-up [animation-delay:400ms]">
           {data.desc}
         </p>
         <span className="absolute right-10 -bottom-5 font-display text-[clamp(120px,18vw,220px)] text-text-muted opacity-[0.08] leading-none pointer-events-none tracking-[4px]">
@@ -186,9 +195,11 @@ export default function CategoryPage({ category, onBack, onSelectCategory }: Cat
             { id: '#3', title: 'Título do Projeto', client: 'Nome do Cliente', desc: 'Descrição curta do projeto — o desafio, a solução e o resultado obtido.', isPlaceholder: true }
           ]).map((project: any, idx: number) => (
             <div key={project.id || idx} className="project-card bg-card-bg border border-border-color rounded-[4px] overflow-hidden transition-all duration-250 hover:border-accent hover:-translate-y-1 relative cursor-none group">
-              <div 
+              <a 
+                href={project.behanceUrl || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="project-img-placeholder w-full aspect-4/3 bg-elevated-bg flex flex-col items-center justify-center gap-3 border-b border-border-color relative overflow-hidden cursor-none"
-                onClick={() => !project.isPlaceholder && onSelectCategory(project.id)}
               >
                 {project.coverImg ? (
                   <img src={`/${project.coverImg}`} alt={project.title} className="w-full h-full object-cover relative z-1" />
@@ -207,7 +218,7 @@ export default function CategoryPage({ category, onBack, onSelectCategory }: Cat
                 {!project.isPlaceholder && (
                   <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/5 transition-colors duration-300 z-0"></div>
                 )}
-              </div>
+              </a>
               <div className="p-5">
                 <span className="font-mono text-[10px] tracking-[2px] uppercase text-accent mb-1.5 flex items-center gap-1.5">
                   <div className="w-4 h-px bg-accent"></div>
@@ -215,17 +226,15 @@ export default function CategoryPage({ category, onBack, onSelectCategory }: Cat
                 </span>
                 <h3 className="font-display text-[22px] tracking-[1.5px] mb-2 leading-[1.1]">{project.title}</h3>
                 <p className="text-[13px] text-text-secondary leading-[1.6]">{project.desc}</p>
-                {project.isPlaceholder ? (
-                  <a href="#" className="inline-flex items-center gap-1.5 mt-3.5 font-mono text-[10px] tracking-[2px] uppercase text-accent no-underline border-b border-accent/30 pb-0.5 transition-colors duration-200 hover:border-accent cursor-none">
-                    Ver no Behance
-                    <ArrowUpRight className="w-3 h-3" />
-                  </a>
-                ) : (
-                  <button onClick={() => onSelectCategory(project.id)} className="inline-flex items-center gap-1.5 mt-3.5 font-mono text-[10px] tracking-[2px] uppercase text-accent bg-transparent border-none p-0 border-b border-accent/30 pb-0.5 transition-colors duration-200 hover:border-accent cursor-none">
-                    Ver Projeto
-                    <ArrowUpRight className="w-3 h-3" />
-                  </button>
-                )}
+                <a 
+                  href={project.behanceUrl || '#'} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 mt-3.5 font-mono text-[10px] tracking-[2px] uppercase text-accent no-underline border-b border-accent/30 pb-0.5 transition-colors duration-200 hover:border-accent cursor-none"
+                >
+                  Ver no Behance
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
               </div>
             </div>
           ))}
