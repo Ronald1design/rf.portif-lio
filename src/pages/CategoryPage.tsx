@@ -18,9 +18,9 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         id: 'project/batalha-espiritual',
         title: 'Culto de Batalha Espiritual',
         client: 'AD.E.C.A',
-        coverImg: 'img/pr felipe 2.png',
+        coverImg: 'img/behance_culto_batalha.jpg',
         desc: 'Identidade visual agressiva e poderosa para o evento principal de batalha espiritual. O projeto exigiu uma estética focada em impacto e autoridade.',
-        behanceUrl: 'https://www.behance.net/'
+        behanceUrl: 'https://www.behance.net/gallery/216000321/SOCIAL-MEDIA-CULTO-DE-BATALHA-ESPIRITUAL'
       },
       {
         id: 'project/conferencia-jovens',
@@ -39,18 +39,20 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     num: '02',
     projects: [
       {
-        id: 'project/kr-brindes',
-        title: 'Lançamento Promocional',
-        client: 'KR Brindes',
-        desc: 'Campanha de redes sociais focada em conversão para novos produtos promocionais corporativos.',
-        behanceUrl: 'https://www.behance.net/'
+        id: 'project/social-media-diversos',
+        title: 'Social Media Diversos',
+        client: 'Vários Clientes',
+        coverImg: 'img/behance_social_media.png',
+        desc: 'Projetos diversos focados em engajamento e conversão para redes sociais.',
+        behanceUrl: 'https://www.behance.net/gallery/162296397/SOCIAL-MEDIA-DIVERSOS'
       },
       {
-        id: 'project/social-hamburgueria',
-        title: 'Rebranding Digital',
-        client: 'Hamburgueria Artesanal',
+        id: 'project/social-media-acaiteria',
+        title: 'Social Media Açaíteria',
+        client: 'Açaíteria',
+        coverImg: 'img/behance_social_acaiteria.jpg',
         desc: 'Estratégia de feed magnético. Foco em imagens apetitosas e design escuro para aumentar vendas no IFood.',
-        behanceUrl: 'https://www.behance.net/'
+        behanceUrl: 'https://www.behance.net/gallery/167402651/SOCIAL-MEDIA-ACAITERIA'
       }
     ]
   },
@@ -124,6 +126,31 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         behanceUrl: 'https://www.behance.net/'
       }
     ]
+  },
+  collage: {
+    eyebrow: '07 — Colagem e Composição',
+    title: 'COMPOSIÇÃO',
+    script: '& Colagem',
+    desc: 'Criação de composições únicas através de colagens digitais, misturando elementos para contar novas histórias visuais.',
+    num: '07',
+    projects: [
+      {
+        id: 'project/elon-musk-espacial',
+        title: 'Inovação Espacial',
+        client: 'Projeto Autoral',
+        coverImg: 'img/behance_elon_collage.png',
+        desc: 'Composição visual de Elon Musk no centro da inovação espacial. Estudo de manipulação, iluminação e ambientação sci-fi.',
+        behanceUrl: 'https://www.behance.net/gallery/216677185/Elon-Musk-no-Centro-da-Inovacao-Espacial-Collage'
+      },
+      {
+        id: 'project/surrealismo-colagem',
+        title: 'Surrealismo',
+        client: 'Projeto Autoral',
+        coverImg: 'img/behance_surrealismo_collage.png',
+        desc: 'Colagem digital surrealista explorando conceitos oníricos. Uma mistura de elementos inusitados para expansão da criatividade.',
+        behanceUrl: 'https://www.behance.net/gallery/247469557/Surrealismo-Colagem-Digital'
+      }
+    ]
   }
 };
 
@@ -133,7 +160,8 @@ const NAV_LINKS = [
   { id: 'premium_products', label: 'Premium' },
   { id: 'packaging', label: 'Embalagem' },
   { id: 'print', label: 'Impresso' },
-  { id: 'ui', label: 'UI/UX' }
+  { id: 'ui', label: 'UI/UX' },
+  { id: 'collage', label: 'Colagem' }
 ];
 
 export default function CategoryPage({ category, onBack, onSelectCategory }: CategoryPageProps) {

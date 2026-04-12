@@ -14,7 +14,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
           <div className="font-script text-[clamp(20px,3vw,36px)] text-accent -mt-2">Portfólio</div>
         </div>
         <span className="md:ml-auto font-mono text-[10px] tracking-[2px] uppercase text-accent bg-accent-dim px-3 py-1 rounded-full border border-accent/20 whitespace-nowrap self-center -order-1 md:order-0">
-          6 Disciplinas
+          7 Disciplinas
         </span>
       </div>
 
@@ -133,7 +133,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
 
         {/* UI/UX */}
         <div 
-          className="bento-card bg-card-bg border border-border-color rounded-[4px] overflow-hidden relative transition-all duration-250 hover:border-accent hover:-translate-y-0.5 cursor-none"
+          className="bento-card bg-card-bg border border-border-color rounded-[4px] overflow-hidden relative transition-all duration-250 hover:border-accent hover:-translate-y-0.5 cursor-none group"
           onClick={() => onSelectCategory('ui')}
         >
           <div className="card-glow"></div>
@@ -166,8 +166,32 @@ export default function Work({ onSelectCategory }: WorkProps) {
           </div>
 
           <div className="absolute bottom-4 left-4 right-4 font-display text-[28px] tracking-[2px] z-3 leading-tight">UI/UX<br/>DESIGN</div>
-          <div className="card-arrow absolute bottom-5 right-5 w-8 h-8 border border-border-color rounded-full flex items-center justify-center transition-all duration-200 z-3">
-            <ArrowUpRight className="w-3.5 h-3.5 text-text-secondary" />
+          <div className="card-arrow absolute bottom-5 right-5 w-8 h-8 border border-border-color rounded-full flex items-center justify-center transition-all duration-200 z-3 group-hover:border-accent group-hover:bg-accent">
+            <ArrowUpRight className="w-3.5 h-3.5 text-text-secondary transition-colors duration-200 group-hover:text-page-bg" />
+          </div>
+        </div>
+
+        {/* Colagem & Composição */}
+        <div 
+          className="bento-card bg-card-bg border border-border-color rounded-[4px] overflow-hidden relative transition-all duration-250 hover:border-accent hover:-translate-y-0.5 cursor-none group"
+          onClick={() => onSelectCategory('collage')}
+        >
+          <div className="card-glow"></div>
+          <span className="absolute top-4 left-4 font-mono text-[9px] tracking-[2px] uppercase text-accent bg-accent-dim px-2 py-1 rounded-full border border-accent/20 z-3">
+            07 — Colagem
+          </span>
+          
+          <div className="absolute inset-0 opacity-20 pointer-events-none flex items-center justify-center">
+            <div className="relative w-full h-full">
+              <div className="absolute top-[30%] left-[20%] w-16 h-16 bg-accent/40 rounded-full blur-xl mix-blend-screen transition-transform duration-500 group-hover:scale-150"></div>
+              <div className="absolute top-[40%] right-[20%] w-20 h-10 border border-white/40 -rotate-12 transition-transform duration-500 group-hover:rotate-12"></div>
+              <div className="absolute bottom-[30%] left-[40%] w-12 h-12 bg-white/10 rotate-45 border border-accent/50 mix-blend-overlay transition-transform duration-500 group-hover:scale-110"></div>
+            </div>
+          </div>
+
+          <div className="absolute bottom-4 left-4 right-4 font-display text-[25px] tracking-[2px] z-3 leading-tight">COMPOSIÇÃO<br/><span className="text-accent">& COLAGEM</span></div>
+          <div className="card-arrow absolute bottom-5 right-5 w-8 h-8 border border-border-color rounded-full flex items-center justify-center transition-all duration-200 z-3 group-hover:border-accent group-hover:bg-accent">
+            <ArrowUpRight className="w-3.5 h-3.5 text-text-secondary transition-colors duration-200 group-hover:text-page-bg" />
           </div>
         </div>
 
