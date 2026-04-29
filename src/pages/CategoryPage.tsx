@@ -23,11 +23,36 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
         behanceUrl: 'https://www.behance.net/gallery/216000321/SOCIAL-MEDIA-CULTO-DE-BATALHA-ESPIRITUAL'
       },
       {
-        id: 'project/conferencia-jovens',
-        title: 'Conferência de Jovens 2025',
+        id: 'project/cruzada',
+        title: 'Cruzada',
         client: 'Igreja Local',
-        desc: 'Identidade visual vibrante e enérgica para o congresso anual de jovens, focada em conexão com a Geração Z.',
-        behanceUrl: 'https://www.behance.net/'
+        coverImg: 'img/behance_cruzada.jpg',
+        desc: 'Projeto de comunicação visual focado em impacto e grande alcance para Cruzada Evangelística.',
+        behanceUrl: 'https://www.behance.net/gallery/248436261/CRUZADA'
+      },
+      {
+        id: 'project/evangelistico',
+        title: 'Culto Evangelístico',
+        client: 'Igreja Local',
+        coverImg: 'img/behance_evangelistico.jpg',
+        desc: 'Design para culto evangelístico, com forte apelo visual para atrair o público e comunicar a mensagem principal.',
+        behanceUrl: 'https://www.behance.net/gallery/248436607/EVAGELISTICO'
+      },
+      {
+        id: 'project/projeto-pai',
+        title: 'Projeto Pai',
+        client: 'Igreja Local',
+        coverImg: 'img/behance_projeto_pai.jpg',
+        desc: 'Projeto visual voltado para celebração ou série temática, transmitindo força e paternidade espiritual.',
+        behanceUrl: 'https://www.behance.net/gallery/248437929/PROJETO-PAI'
+      },
+      {
+        id: 'project/campanha-restituicao',
+        title: 'Campanha da Restituição',
+        client: 'Igreja Local',
+        coverImg: 'img/behance_restituicao.jpg',
+        desc: 'Identidade visual para campanha focada em renovação e restituição, com estética que inspira esperança e fé.',
+        behanceUrl: 'https://www.behance.net/gallery/248438131/CAMPANHA-DA-RESTITUICAO'
       }
     ]
   },
