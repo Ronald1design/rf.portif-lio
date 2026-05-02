@@ -64,6 +64,22 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     num: '02',
     projects: [
       {
+        id: 'project/banner-krbrindes',
+        title: 'Banner Site KR Brindes',
+        client: 'KR Brindes',
+        coverImg: 'img/behance_banner_krbrindes.jpg',
+        desc: 'Design de banner focado em conversão e comunicação visual para o site da KR Brindes.',
+        behanceUrl: 'https://www.behance.net/gallery/248498005/BANNER-PARA-SITE-KRBRINDES'
+      },
+      {
+        id: 'project/social-media-curso',
+        title: 'Curso Produção Audiovisual',
+        client: 'Audiovisual',
+        coverImg: 'img/behance_social_curso.jpg',
+        desc: 'Projetos focados em conversão e engajamento para curso de produção audiovisual.',
+        behanceUrl: 'https://www.behance.net/gallery/248496315/SOCIAL-MEDIA-CURSO-DE-PRODUCAO-AUDIOVISUAL'
+      },
+      {
         id: 'project/social-media-diversos',
         title: 'Social Media Diversos',
         client: 'Vários Clientes',
@@ -88,6 +104,14 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     desc: 'Camisa do Grupo de Percussão, brindes da Copa do Mundo e projetos futuros de vestuário.',
     num: '03',
     projects: [
+      {
+        id: 'project/caneca-karate',
+        title: 'Caneca Projeto Karatê',
+        client: 'Projeto Karatê',
+        coverImg: 'img/behance_caneca_karate.jpg',
+        desc: 'Design de caneca personalizada para o Projeto Karatê.',
+        behanceUrl: 'https://www.behance.net/gallery/248497461/CANECA-PROJETO-KARATE'
+      },
       {
         id: 'project/camisa-percussao',
         title: 'Camisa Grupo de Percussão',
