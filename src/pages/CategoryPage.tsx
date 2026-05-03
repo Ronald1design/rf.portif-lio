@@ -15,6 +15,38 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     num: '01',
     projects: [
       {
+        id: 'project/culto-libertacao',
+        title: 'Culto de Libertação e Adoração',
+        client: 'Igreja Local',
+        coverImg: 'img/behance_culto_libertacao.jpg',
+        desc: 'Identidade visual para o Culto de Libertação e Adoração, com design profundo e focado em espiritualidade.',
+        behanceUrl: 'https://www.behance.net/gallery/248656241/CULTO-DE-LIBERTACAO-E-ADORACAO'
+      },
+      {
+        id: 'project/culto-domingo',
+        title: 'Culto de Domingo',
+        client: 'Igreja Local',
+        coverImg: 'img/behance_culto_domingo.jpg',
+        desc: 'Comunicação visual e flyers para as celebrações do Culto de Domingo.',
+        behanceUrl: 'https://www.behance.net/gallery/248656185/CULTO-DE-DOMINGO'
+      },
+      {
+        id: 'project/pre-cruzada',
+        title: 'Pré-Cruzada Cantinho do Céu para Cristo',
+        client: 'Igreja Local',
+        coverImg: 'img/behance_precruzada.jpg',
+        desc: 'Identidade visual e comunicação para a Pré-Cruzada Evangelística Cantinho do Céu para Cristo.',
+        behanceUrl: 'https://www.behance.net/gallery/248656113/PRE-CRUZADA-CANTINHO-DO-CEU-PARA-CRISTO'
+      },
+      {
+        id: 'project/culto-maes',
+        title: 'Mães de Joelhos e Filhos de Pé',
+        client: 'Igreja Local',
+        coverImg: 'img/behance_culto_maes.jpg',
+        desc: 'Identidade visual para o culto especial "Mães de Joelhos e Filhos de Pé", com foco em fé e intercessão familiar.',
+        behanceUrl: 'https://www.behance.net/gallery/248653771/CULTO-MAES-DE-JOELHOS-E-FILHOS-DE-PE'
+      },
+      {
         id: 'project/batalha-espiritual',
         title: 'Culto de Batalha Espiritual',
         client: 'AD.E.C.A',
@@ -63,6 +95,30 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     desc: 'Trabalho focado em vendas e engajamento para a KR Brindes e outros negócios locais.',
     num: '02',
     projects: [
+      {
+        id: 'project/flyer-esportivo',
+        title: 'Flyer Esportivo',
+        client: 'Esportes',
+        coverImg: 'img/behance_flyer_esportivo.jpg',
+        desc: 'Flyer esportivo dinâmico e impactante para jogos e eventos esportivos.',
+        behanceUrl: 'https://www.behance.net/gallery/248653387/FLYER-ESPORTIVO'
+      },
+      {
+        id: 'project/story-agenda-aberta',
+        title: 'Story Agenda Aberta',
+        client: 'Geral',
+        coverImg: 'img/behance_story_agenda.jpg',
+        desc: 'Design de story focado em aviso de agenda aberta e captação de clientes.',
+        behanceUrl: 'https://www.behance.net/gallery/248653313/STORY-AGENDA-ABERTA'
+      },
+      {
+        id: 'project/social-media-bolo-fe',
+        title: 'Social Media Bolo da Fé',
+        client: 'Bolo da Fé',
+        coverImg: 'img/behance_social_bolo.jpg',
+        desc: 'Projeto de Social Media focado em divulgação e vendas para a confeitaria Bolo da Fé.',
+        behanceUrl: 'https://www.behance.net/gallery/248653201/SOCIAL-MEDIA-BOLO-DA-FE'
+      },
       {
         id: 'project/banner-krbrindes',
         title: 'Banner Site KR Brindes',
