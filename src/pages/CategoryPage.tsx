@@ -15,6 +15,14 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     num: '01',
     projects: [
       {
+        id: 'project/poster-evangelismo',
+        title: 'Poster Evangelismo no Hospital',
+        client: 'Igreja Local',
+        coverImg: 'img/behance_poster_evangelismo.jpg',
+        desc: 'Comunicação visual sensível e empática para ação de evangelismo em hospitais.',
+        behanceUrl: 'https://www.behance.net/gallery/248656305/POSTER-EVANGELISMO-NO-HOSPITAL'
+      },
+      {
         id: 'project/culto-libertacao',
         title: 'Culto de Libertação e Adoração',
         client: 'Igreja Local',
