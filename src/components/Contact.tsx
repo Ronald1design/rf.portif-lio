@@ -56,32 +56,64 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="bg-card-bg border border-border-color rounded-[4px] p-6 md:p-10 relative">
+        <form 
+          action="https://formsubmit.co/ronaldferrazsousa1@gmail.com" 
+          method="POST"
+          className="bg-card-bg border border-border-color rounded-[4px] p-6 md:p-10 relative"
+        >
           <div className="absolute -inset-[1px] border border-dashed border-border-dashed rounded-[4px] pointer-events-none"></div>
           
           <div className="mb-5">
             <label className="block font-mono text-[10px] tracking-[2px] uppercase text-text-muted mb-2" htmlFor="name">Seu Nome</label>
-            <input className="w-full bg-elevated-bg border border-border-color rounded-[4px] px-4 py-3 font-body text-[14px] text-text-primary outline-none transition-colors duration-200 focus:border-accent placeholder:text-text-muted" type="text" id="name" placeholder="João Silva" />
+            <input 
+              className="w-full bg-elevated-bg border border-border-color rounded-[4px] px-4 py-3 font-body text-[14px] text-text-primary outline-none transition-colors duration-200 focus:border-accent placeholder:text-text-muted" 
+              type="text" 
+              id="name" 
+              name="name"
+              required
+              placeholder="João Silva" 
+            />
           </div>
           <div className="mb-5">
             <label className="block font-mono text-[10px] tracking-[2px] uppercase text-text-muted mb-2" htmlFor="email">E-mail</label>
-            <input className="w-full bg-elevated-bg border border-border-color rounded-[4px] px-4 py-3 font-body text-[14px] text-text-primary outline-none transition-colors duration-200 focus:border-accent placeholder:text-text-muted" type="email" id="email" placeholder="joao@empresa.com" />
+            <input 
+              className="w-full bg-elevated-bg border border-border-color rounded-[4px] px-4 py-3 font-body text-[14px] text-text-primary outline-none transition-colors duration-200 focus:border-accent placeholder:text-text-muted" 
+              type="email" 
+              id="email" 
+              name="email"
+              required
+              placeholder="joao@empresa.com" 
+            />
           </div>
           <div className="mb-5">
             <label className="block font-mono text-[10px] tracking-[2px] uppercase text-text-muted mb-2" htmlFor="project">Tipo de Projeto</label>
-            <input className="w-full bg-elevated-bg border border-border-color rounded-[4px] px-4 py-3 font-body text-[14px] text-text-primary outline-none transition-colors duration-200 focus:border-accent placeholder:text-text-muted" type="text" id="project" placeholder="Design de Logo, Identidade Visual, UI/UX..." />
+            <input 
+              className="w-full bg-elevated-bg border border-border-color rounded-[4px] px-4 py-3 font-body text-[14px] text-text-primary outline-none transition-colors duration-200 focus:border-accent placeholder:text-text-muted" 
+              type="text" 
+              id="project" 
+              name="project"
+              required
+              placeholder="Design de Logo, Identidade Visual, UI/UX..." 
+            />
           </div>
           <div className="mb-5">
             <label className="block font-mono text-[10px] tracking-[2px] uppercase text-text-muted mb-2" htmlFor="message">Fale sobre seu projeto</label>
-            <textarea className="w-full bg-elevated-bg border border-border-color rounded-[4px] px-4 py-3 font-body text-[14px] text-text-primary outline-none transition-colors duration-200 focus:border-accent placeholder:text-text-muted resize-none" id="message" rows={4} placeholder="Descreva sua visão, objetivos e prazo..."></textarea>
+            <textarea 
+              className="w-full bg-elevated-bg border border-border-color rounded-[4px] px-4 py-3 font-body text-[14px] text-text-primary outline-none transition-colors duration-200 focus:border-accent placeholder:text-text-muted resize-none" 
+              id="message" 
+              name="message"
+              required
+              rows={4} 
+              placeholder="Descreva sua visão, objetivos e prazo..."
+            ></textarea>
           </div>
           <button 
-            className="w-full text-center font-mono text-[11px] tracking-[2px] uppercase text-page-bg bg-accent px-8 py-4 rounded-full no-underline border-none transition-shadow duration-250 hover:shadow-[0_0_30px_rgba(163,230,53,0.25)]"
-            onClick={() => alert('Mensagem enviada! Retorno em até 24 horas.')}
+            type="submit"
+            className="w-full text-center font-mono text-[11px] tracking-[2px] uppercase text-page-bg bg-accent px-8 py-4 rounded-full no-underline border-none transition-shadow duration-250 hover:shadow-[0_0_30px_rgba(163,230,53,0.25)] cursor-none"
           >
             Enviar Mensagem →
           </button>
-        </div>
+        </form>
       </div>
     </section>
   );
