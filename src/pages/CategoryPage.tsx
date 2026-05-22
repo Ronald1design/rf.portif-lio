@@ -198,15 +198,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     script: 'Design',
     desc: 'Embalagens que comunicam qualidade e criam a primeira impressão do produto nas prateleiras.',
     num: '04',
-    projects: [
-      {
-        id: 'project/linha-suplementos',
-        title: 'Linha de Suplementos',
-        client: 'Nutrition Pro',
-        desc: 'Design premium para potes e sachês de suplementos, transmitindo alta performance e credibilidade.',
-        behanceUrl: 'https://www.behance.net/'
-      }
-    ]
+    projects: []
   },
   print: {
     eyebrow: '05 — Comunicação Visual',
@@ -214,15 +206,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     script: 'Impressa',
     desc: 'Banners, flyers, standees e peças impressas que fortalecem a presença da marca no mundo físico.',
     num: '05',
-    projects: [
-      {
-        id: 'project/standee-evento',
-        title: 'Standee Evento Corporativo',
-        client: 'Summit 2025',
-        desc: 'Comunicação local e sinalização para o hall do evento de negócios. Leitura rápida e alto contraste.',
-        behanceUrl: 'https://www.behance.net/'
-      }
-    ]
+    projects: []
   },
   ui: {
     eyebrow: '06 — Interfaces Digitais',
@@ -230,15 +214,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     script: 'Design',
     desc: 'Interfaces funcionais e esteticamente sólidas — apps, sites e sistemas que unem usabilidade e beleza.',
     num: '06',
-    projects: [
-      {
-        id: 'project/app-delivery',
-        title: 'App de Delivery',
-        client: 'FoodExpress',
-        desc: 'Estudo de caso focado em redução de atrito no carrinho e design moderno para o usuário final.',
-        behanceUrl: 'https://www.behance.net/'
-      }
-    ]
+    projects: []
   },
   collage: {
     eyebrow: '07 — Colagem e Composição',
@@ -329,57 +305,67 @@ export default function CategoryPage({ category, onBack, onSelectCategory }: Cat
       </div>
 
       <div className="px-5 md:px-10 py-[40px] md:py-[60px] pb-[100px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {(data.projects && data.projects.length > 0 ? data.projects : [
-            { id: '#1', title: 'Título do Projeto', client: 'Nome do Cliente', desc: 'Descrição curta do projeto — o desafio, a solução e o resultado obtido.', isPlaceholder: true },
-            { id: '#2', title: 'Título do Projeto', client: 'Nome do Cliente', desc: 'Descrição curta do projeto — o desafio, a solução e o resultado obtido.', isPlaceholder: true },
-            { id: '#3', title: 'Título do Projeto', client: 'Nome do Cliente', desc: 'Descrição curta do projeto — o desafio, a solução e o resultado obtido.', isPlaceholder: true }
-          ]).map((project: any, idx: number) => (
-            <div key={project.id || idx} className="project-card bg-card-bg border border-border-color rounded-[4px] overflow-hidden transition-all duration-250 hover:border-accent hover:-translate-y-1 relative cursor-none group">
-              <a 
-                href={project.behanceUrl || '#'}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-img-placeholder w-full aspect-4/3 bg-elevated-bg flex flex-col items-center justify-center gap-3 border-b border-border-color relative overflow-hidden cursor-none"
-              >
-                {project.coverImg ? (
-                  <img src={`/${project.coverImg}`} alt={project.title} className="w-full h-full object-cover relative z-1" />
-                ) : (
-                  <>
-                    <div className="w-10 h-10 border-[1.5px] border-text-muted rounded-full flex items-center justify-center relative z-1">
-                      <ImageIcon className="w-[18px] h-[18px] text-text-muted" />
-                    </div>
-                    <span className="font-mono text-[10px] tracking-[2px] uppercase text-text-muted relative z-1">
-                      Cole a URL da imagem
-                    </span>
-                  </>
-                )}
-                
-                {/* Visual affordance for clicking if it's a real project */}
-                {!project.isPlaceholder && (
-                  <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/5 transition-colors duration-300 z-0"></div>
-                )}
-              </a>
-              <div className="p-5">
-                <span className="font-mono text-[10px] tracking-[2px] uppercase text-accent mb-1.5 flex items-center gap-1.5">
-                  <div className="w-4 h-px bg-accent"></div>
-                  {project.client}
-                </span>
-                <h3 className="font-display text-[22px] tracking-[1.5px] mb-2 leading-[1.1]">{project.title}</h3>
-                <p className="text-[13px] text-text-secondary leading-[1.6]">{project.desc}</p>
+        {data.projects && data.projects.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {data.projects.map((project: any, idx: number) => (
+              <div key={project.id || idx} className="project-card bg-card-bg border border-border-color rounded-[4px] overflow-hidden transition-all duration-250 hover:border-accent hover:-translate-y-1 relative cursor-none group">
                 <a 
-                  href={project.behanceUrl || '#'} 
+                  href={project.behanceUrl || '#'}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 mt-3.5 font-mono text-[10px] tracking-[2px] uppercase text-accent no-underline border-b border-accent/30 pb-0.5 transition-colors duration-200 hover:border-accent cursor-none"
+                  className="project-img-placeholder w-full aspect-4/3 bg-elevated-bg flex flex-col items-center justify-center gap-3 border-b border-border-color relative overflow-hidden cursor-none"
                 >
-                  Ver no Behance
-                  <ArrowUpRight className="w-3 h-3" />
+                  {project.coverImg ? (
+                    <img src={`/${project.coverImg}`} alt={project.title} className="w-full h-full object-cover relative z-1" />
+                  ) : (
+                    <>
+                      <div className="w-10 h-10 border-[1.5px] border-text-muted rounded-full flex items-center justify-center relative z-1">
+                        <ImageIcon className="w-[18px] h-[18px] text-text-muted" />
+                      </div>
+                      <span className="font-mono text-[10px] tracking-[2px] uppercase text-text-muted relative z-1">
+                        Em breve
+                      </span>
+                    </>
+                  )}
+                  
+                  {/* Visual affordance for clicking if it's a real project */}
+                  {!project.isPlaceholder && (
+                    <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/5 transition-colors duration-300 z-0"></div>
+                  )}
                 </a>
+                <div className="p-5">
+                  <span className="font-mono text-[10px] tracking-[2px] uppercase text-accent mb-1.5 flex items-center gap-1.5">
+                    <div className="w-4 h-px bg-accent"></div>
+                    {project.client}
+                  </span>
+                  <h3 className="font-display text-[22px] tracking-[1.5px] mb-2 leading-[1.1]">{project.title}</h3>
+                  <p className="text-[13px] text-text-secondary leading-[1.6]">{project.desc}</p>
+                  {project.behanceUrl && project.behanceUrl !== 'https://www.behance.net/' && project.behanceUrl !== '#' && (
+                    <a 
+                      href={project.behanceUrl} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-3.5 font-mono text-[10px] tracking-[2px] uppercase text-accent no-underline border-b border-accent/30 pb-0.5 transition-colors duration-200 hover:border-accent cursor-none"
+                    >
+                      Ver no Behance
+                      <ArrowUpRight className="w-3 h-3" />
+                    </a>
+                  )}
+                </div>
               </div>
+            ))}
+          </div>
+        ) : (
+          <div className="w-full py-24 flex flex-col items-center justify-center border border-border-color/50 border-dashed rounded-[4px] bg-elevated-bg/20 animate-fade-up [animation-delay:500ms]">
+            <div className="w-16 h-16 mb-6 flex items-center justify-center border border-border-color rounded-full bg-card-bg">
+              <ImageIcon className="w-6 h-6 text-text-muted" />
             </div>
-          ))}
-        </div>
+            <h3 className="font-display text-[28px] tracking-[2px] mb-3 text-text-primary">EM BREVE</h3>
+            <p className="font-mono text-[12px] uppercase tracking-[1px] text-text-secondary max-w-[400px] text-center leading-[1.8]">
+              Ainda não temos projetos deste ramo.<br/>Estamos preparando coisas incríveis!
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
