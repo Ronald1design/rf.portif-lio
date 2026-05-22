@@ -18,11 +18,14 @@ export default function Contact() {
 
     try {
       // 1. Save to Supabase contacts table
-      const response = await fetch('https://dmaikaqyvkyywqvlkmos.supabase.co/rest/v1/contacts', {
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://ehvjvtrsydjyhtgudqia.supabase.co';
+      const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'sb_publishable_z55KWXn3xIBEEeOoVRNDVg_3_s8EdaK';
+
+      const response = await fetch(`${supabaseUrl}/rest/v1/contacts`, {
         method: 'POST',
         headers: {
-          'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtYWlrYXF5dmt5eXdxdmxrbW9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEwMTQzNTQsImV4cCI6MjA4NjU5MDM1NH0.YkjgOQBi_nkTWLPsTPapev3f8CpIWSn_msxjT_vIbfY',
-          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtYWlrYXF5dmt5eXdxdmxrbW9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEwMTQzNTQsImV4cCI6MjA4NjU5MDM1NH0.YkjgOQBi_nkTWLPsTPapev3f8CpIWSn_msxjT_vIbfY',
+          'apikey': supabaseAnonKey,
+          'Authorization': `Bearer ${supabaseAnonKey}`,
           'Content-Type': 'application/json',
           'Prefer': 'return=minimal'
         },
