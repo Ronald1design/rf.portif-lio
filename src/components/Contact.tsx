@@ -36,7 +36,7 @@ export default function Contact() {
       setStatusMsg({ type: 'success', text: 'Contato salvo! Redirecionando para o WhatsApp...' });
 
       // 2. Format WhatsApp Message (REPLACE PHONE NUMBER BELOW)
-      const whatsappNumber = '5511999999999'; 
+      const whatsappNumber = '559881241977'; 
       const text = `Olá Ronald!\n\nMeu nome é *${name}* (${email}).\n\nTenho interesse em um projeto de *${project}*.\n\n*Detalhes do projeto*:\n${message}`;
       const encodedText = encodeURIComponent(text);
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
