@@ -14,8 +14,8 @@ export default function Hero() {
       <img src="/img/profile-nobg.png" alt="" className="absolute -right-10 md:right-0 top-1/2 -translate-y-1/2 w-[65vw] max-w-[500px] opacity-[0.08] grayscale pointer-events-none object-contain z-0" />
 
       <div className="relative z-2 flex flex-col justify-center pt-[80px] md:pt-[100px] pb-6 md:pb-10 max-w-[700px]">
-        <div className="font-mono text-[11px] tracking-[3px] uppercase text-accent mb-5 flex items-center gap-3 animate-fade-up [animation-delay:0.1s]">
-          <div className="w-8 h-px bg-accent"></div>
+        <div className="font-mono text-[9px] md:text-[11px] tracking-[1.5px] md:tracking-[3px] uppercase text-accent mb-5 flex items-center gap-2 md:gap-3 animate-fade-up [animation-delay:0.1s]">
+          <div className="w-5 md:w-8 h-px bg-accent"></div>
           Portfólio de Design Gráfico
         </div>
         <h1 className="font-display text-[clamp(48px,16vw,130px)] leading-[0.9] tracking-[2px] mb-8 animate-fade-up [animation-delay:0.2s]">
