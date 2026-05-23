@@ -22,8 +22,8 @@ export default function Hero() {
           RONALD<br />FERRAZ
         </h1>
         <p className="text-[13px] md:text-[15px] leading-[1.7] text-text-secondary max-w-[460px] mb-8 md:mb-12 animate-fade-up [animation-delay:0.4s]">
-          Estrategista Visual focado em <em className="text-text-primary not-italic font-medium">materializar ideias</em> através de peças digitais e produtos físicos de alto impacto.
-          Criando comunicação que gera conexão verdadeira com o público — das redes sociais à estamparia.
+          Designer Gráfico focado na execução ágil e em <em className="text-text-primary not-italic font-medium">materializar ideias</em> através de peças digitais e produtos físicos de alto impacto.
+          Criando comunicação direta e de alta performance — das redes sociais a materiais gráficos.
         </p>
         <div className="flex flex-wrap gap-3 md:gap-4 items-center animate-fade-up [animation-delay:0.5s]">
           <a href="#work" className="font-mono text-[10px] md:text-[11px] tracking-[2px] uppercase text-page-bg bg-accent px-6 md:px-8 py-3 md:py-3.5 rounded-full no-underline border-none transition-shadow duration-250 hover:shadow-[0_0_30px_rgba(163,230,53,0.25)]">
