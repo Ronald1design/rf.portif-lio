@@ -49,6 +49,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
           <span className="absolute top-4 left-4 font-mono text-[9px] tracking-[2px] uppercase text-accent bg-accent-dim px-2 py-1 rounded-full border border-accent/20 z-3">
             02 — Social Comercial
           </span>
+          <span className="font-display text-[100px] text-text-muted leading-none opacity-30 absolute top-4 right-6 pointer-events-none select-none">02</span>
           <div className="absolute bottom-4 left-4 right-4 font-display text-[26px] tracking-[2px] z-3 leading-tight mt-auto">SOCIAL MEDIA<br/><span className="text-accent">COMERCIAL</span></div>
           <div className="card-arrow absolute bottom-5 right-5 w-8 h-8 border border-border-color rounded-full flex items-center justify-center transition-all duration-200 z-3">
             <ArrowUpRight className="w-3.5 h-3.5 text-text-secondary group-hover:text-accent" />
@@ -64,6 +65,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
           <span className="absolute top-4 left-4 font-mono text-[9px] tracking-[2px] uppercase text-accent bg-accent-dim px-2 py-1 rounded-full border border-accent/20 z-3">
             03 — Produtos Premium
           </span>
+          <span className="font-display text-[100px] text-text-muted leading-none opacity-30 absolute top-4 right-6 pointer-events-none select-none">03</span>
           <div className="absolute bottom-4 left-4 right-4 font-display text-[26px] tracking-[2px] z-3 leading-tight">ESTAMPARIA<br/><span className="text-accent">& PRODUTOS</span></div>
           <div className="card-arrow absolute bottom-5 right-5 w-8 h-8 border border-border-color rounded-full flex items-center justify-center transition-all duration-200 z-3">
             <ArrowUpRight className="w-3.5 h-3.5 text-text-secondary group-hover:text-accent" />
@@ -80,6 +82,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
           <span className="absolute top-4 left-4 font-mono text-[9px] tracking-[2px] uppercase text-accent bg-accent-dim px-2 py-1 rounded-full border border-accent/20 z-3">
             04 — Embalagem
           </span>
+          <span className="font-display text-[100px] text-text-muted leading-none opacity-30 absolute top-4 right-6 pointer-events-none select-none">04</span>
           
           <div className="package-viz">
             <div className="pack-bag">
@@ -108,6 +111,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
           <span className="absolute top-4 left-4 font-mono text-[9px] tracking-[2px] uppercase text-accent bg-accent-dim px-2 py-1 rounded-full border border-accent/20 z-3">
             05 — Impresso
           </span>
+          <span className="font-display text-[100px] text-text-muted leading-none opacity-30 absolute top-4 right-6 pointer-events-none select-none">05</span>
           
           <div className="print-viz">
             <div className="print-stack">
@@ -140,6 +144,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
           <span className="absolute top-4 left-4 font-mono text-[9px] tracking-[2px] uppercase text-accent bg-accent-dim px-2 py-1 rounded-full border border-accent/20 z-3">
             06 — UI/UX
           </span>
+          <span className="font-display text-[100px] text-text-muted leading-none opacity-30 absolute top-4 right-6 pointer-events-none select-none">06</span>
           
           <div className="ui-viz">
             <div className="ui-screen w-[44px] h-[80px]">
@@ -180,6 +185,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
           <span className="absolute top-4 left-4 font-mono text-[9px] tracking-[2px] uppercase text-accent bg-accent-dim px-2 py-1 rounded-full border border-accent/20 z-3">
             07 — Colagem
           </span>
+          <span className="font-display text-[100px] text-text-muted leading-none opacity-30 absolute top-4 right-6 pointer-events-none select-none">07</span>
           
           <div className="absolute inset-0 opacity-20 pointer-events-none flex items-center justify-center">
             <div className="relative w-full h-full">
