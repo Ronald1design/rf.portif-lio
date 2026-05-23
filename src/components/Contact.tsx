@@ -44,11 +44,20 @@ export default function Contact() {
       const encodedText = encodeURIComponent(text);
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
-      // Open WhatsApp in new tab
-      window.open(whatsappUrl, '_blank');
-
       // Reset form
       e.currentTarget.reset();
+
+      // Open WhatsApp safely (handles popup blockers on mobile devices)
+      try {
+        const newWindow = window.open(whatsappUrl, '_blank');
+        if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+          // If popup is blocked, redirect current tab
+          window.location.href = whatsappUrl;
+        }
+      } catch (err) {
+        // Fallback for any browser security restrictions
+        window.location.href = whatsappUrl;
+      }
     } catch (error) {
       console.error(error);
       setStatusMsg({ type: 'error', text: 'Ocorreu um erro ao salvar o contato. Mas você ainda pode me chamar no e-mail!' });
