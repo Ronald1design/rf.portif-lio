@@ -11,7 +11,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     eyebrow: '01 — Igrejas & Eventos',
     title: 'COMUNICAÇÃO',
     script: 'Visual',
-    desc: 'Artes da igreja, banner da AD.E.C.A, flyers de congressos. Entendendo e comunicando a linguagem visual correta.',
+    desc: 'Traduza a essência do seu evento em peças que conectam. Criação ágil e de alta performance focada na linguagem visual do nicho gospel para atrair e engajar.',
     num: '01',
     projects: [
       {
