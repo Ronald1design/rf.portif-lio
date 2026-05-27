@@ -33,7 +33,7 @@ export default function Work({ onSelectCategory }: WorkProps) {
             <span className="font-display text-[100px] text-text-muted leading-none opacity-30 absolute top-4 right-6">01</span>
             <div className="font-display text-[28px] md:text-[38px] tracking-[2px] leading-none mb-2">COMUNICAÇÃO</div>
             <div className="font-script text-[16px] md:text-[22px] text-accent">Igrejas & Eventos</div>
-            <p className="hidden md:block mt-3 text-[13px] text-text-secondary leading-[1.6]">Artes da igreja, o banner de R$ 135,00 da AD.E.C.A, flyers de congressos. Entendendo e aplicando a linguagem visual do seu nicho.</p>
+            <p className="hidden md:block mt-3 text-[13px] text-text-secondary leading-[1.6]">Mais que flyers e banners: é a materialização ágil das suas ideias com design estratégico. Crio materiais de comunicação de alto impacto visual para congressos, igrejas e eventos, dominando a linguagem do seu nicho para conectar sua marca ao público certo.</p>
           </div>
           <div className="card-arrow absolute bottom-5 right-5 w-8 h-8 border border-border-color rounded-full flex items-center justify-center transition-all duration-200 group-hover:border-accent group-hover:bg-accent z-3">
             <ArrowUpRight className="w-3.5 h-3.5 text-text-secondary transition-colors duration-200 group-hover:text-page-bg" />
