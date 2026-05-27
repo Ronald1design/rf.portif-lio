@@ -165,7 +165,7 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     eyebrow: '03 — Produtos Premium',
     title: 'ESTAMPARIA',
     script: '& Produtos',
-    desc: 'Camisa do Grupo de Percussão, brindes da Copa do Mundo e projetos futuros de vestuário.',
+    desc: 'Transformando ideias em produtos tangíveis de alta qualidade. Design estratégico aplicado à estamparia e produtos físicos, garantindo precisão técnica da tela ao material impresso.',
     num: '03',
     projects: [
       {
