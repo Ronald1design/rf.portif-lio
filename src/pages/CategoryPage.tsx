@@ -104,6 +104,14 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     num: '02',
     projects: [
       {
+        id: 'project/carrossel-alto-impacto',
+        title: 'Carrossel de Alto Impacto',
+        client: 'Instagram',
+        coverImg: 'img/behance_carrossel_impacto.jpg',
+        desc: 'Design de carrossel de alto impacto focado em retenção, engajamento e conversão para redes sociais.',
+        behanceUrl: 'https://www.behance.net/gallery/253391753/Carrossel-de-Alto-Impacto-para-Redes-Sociais'
+      },
+      {
         id: 'project/flyer-esportivo',
         title: 'Flyer Esportivo',
         client: 'Esportes',
