@@ -104,6 +104,14 @@ const CATEGORY_DATA: Record<string, { eyebrow: string, title: string, script: st
     num: '02',
     projects: [
       {
+        id: 'project/social-media-bomcia',
+        title: 'Social Media Bom Cia',
+        client: 'Bom Cia',
+        coverImg: 'img/behance_social_bomcia.jpg',
+        desc: 'Identidade visual e posts de Feed & Stories focados em posicionamento estratégico e engajamento da marca.',
+        behanceUrl: 'https://www.behance.net/gallery/253392581/Social-Media-Bom-Cia-Feed-Stories?share=1'
+      },
+      {
         id: 'project/carrossel-alto-impacto',
         title: 'Carrossel de Alto Impacto',
         client: 'Instagram',
